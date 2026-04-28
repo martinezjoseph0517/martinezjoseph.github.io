@@ -32,9 +32,9 @@ website:
       - text: "EPPS 6356 Data Visualization | Fall 2025"
         href: epps6356.qmd
       - text: "EPPS 6323 Knowledge Mining | Spring 2026"
-        href: epps6323.qmd
+        href: 6323KnowledgeMining.qmd
       - text: "EPPS 6354 Information Management | Spring 2026"
-        href: epps6354.qmd
+        href: 6354InfoManagement.qmd
 
 format:
   html:

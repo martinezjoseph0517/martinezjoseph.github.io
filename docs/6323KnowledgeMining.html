@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,10 +138,45 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./6323KnowledgeMining.html">EPPS 6323 Knowledge Mining | Spring 2026</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./epps6356.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPPS 6356 Data Visualization | Fall 2025</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6323KnowledgeMining.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">EPPS 6323 Knowledge Mining | Spring 2026</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6354InfoManagement.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">EPPS 6354 Information Management | Spring 2026</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -155,15 +190,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#individual-assignments" id="toc-individual-assignments" class="nav-link" data-scroll-target="#individual-assignments">Individual Assignments</a></li>
   <li><a href="#reflections" id="toc-reflections" class="nav-link" data-scroll-target="#reflections">Reflections</a>
   <ul class="collapse">
+  <li><a href="#ai-for-science-and-the-move-from-prompts-to-research-workflows-april-21st-2026" id="toc-ai-for-science-and-the-move-from-prompts-to-research-workflows-april-21st-2026" class="nav-link" data-scroll-target="#ai-for-science-and-the-move-from-prompts-to-research-workflows-april-21st-2026">AI for Science and the Move from Prompts to Research Workflows | April 21st, 2026</a></li>
+  <li><a href="#knowledge-graphs-for-research-and-knowledge-mining-april-14th-2026" id="toc-knowledge-graphs-for-research-and-knowledge-mining-april-14th-2026" class="nav-link" data-scroll-target="#knowledge-graphs-for-research-and-knowledge-mining-april-14th-2026">Knowledge Graphs for Research and Knowledge Mining | April 14th, 2026</a></li>
+  <li><a href="#retrieval-augmented-generation-and-research-trustworthiness-april-7th-2026" id="toc-retrieval-augmented-generation-and-research-trustworthiness-april-7th-2026" class="nav-link" data-scroll-target="#retrieval-augmented-generation-and-research-trustworthiness-april-7th-2026">Retrieval-Augmented Generation and Research Trustworthiness | April 7th, 2026</a></li>
   <li><a href="#the-advantages-and-limitations-of-llms-march-31st-2026" id="toc-the-advantages-and-limitations-of-llms-march-31st-2026" class="nav-link" data-scroll-target="#the-advantages-and-limitations-of-llms-march-31st-2026">The Advantages and Limitations of LLMs | March 31st, 2026</a></li>
   <li><a href="#predictive-models-as-research-assistants-march-24th-2026" id="toc-predictive-models-as-research-assistants-march-24th-2026" class="nav-link" data-scroll-target="#predictive-models-as-research-assistants-march-24th-2026">Predictive Models as Research Assistants | March 24th, 2026</a></li>
   <li><a href="#prediction-vs-explanation-and-financial-markets-march-10th-2026" id="toc-prediction-vs-explanation-and-financial-markets-march-10th-2026" class="nav-link" data-scroll-target="#prediction-vs-explanation-and-financial-markets-march-10th-2026">Prediction vs Explanation and Financial Markets | March 10th, 2026</a></li>
-  <li><a href="#reflection-on-a-machine-learning-pipeline-march-3rd-2026" id="toc-reflection-on-a-machine-learning-pipeline-march-3rd-2026" class="nav-link" data-scroll-target="#reflection-on-a-machine-learning-pipeline-march-3rd-2026">Reflection on a Machine Learning Pipeline | March 3rd, 2026</a></li>
+  <li><a href="#association-rules-data-mining-and-model-evaluation-march-3rd-2026" id="toc-association-rules-data-mining-and-model-evaluation-march-3rd-2026" class="nav-link" data-scroll-target="#association-rules-data-mining-and-model-evaluation-march-3rd-2026">Association rules, data mining, and model evaluation | March 3rd, 2026</a></li>
   <li><a href="#knowledge-information-and-ai-february-24th-2026" id="toc-knowledge-information-and-ai-february-24th-2026" class="nav-link" data-scroll-target="#knowledge-information-and-ai-february-24th-2026">Knowledge, Information, and AI | February 24th, 2026</a></li>
   <li><a href="#reflection-on-assignment-2-february-17th-2026" id="toc-reflection-on-assignment-2-february-17th-2026" class="nav-link" data-scroll-target="#reflection-on-assignment-2-february-17th-2026">Reflection on Assignment 2 | February 17th, 2026</a></li>
   <li><a href="#artifical-general-intelligence-oneils-weapons-of-math-destruction-febuary-10th-2026" id="toc-artifical-general-intelligence-oneils-weapons-of-math-destruction-febuary-10th-2026" class="nav-link" data-scroll-target="#artifical-general-intelligence-oneils-weapons-of-math-destruction-febuary-10th-2026">Artifical General Intelligence &amp; O’Neil’s Weapons of Math Destruction | Febuary 10th, 2026</a></li>
   <li><a href="#breiman-vs.-galit-february-3rd-2026" id="toc-breiman-vs.-galit-february-3rd-2026" class="nav-link" data-scroll-target="#breiman-vs.-galit-february-3rd-2026">Breiman Vs. Galit | February 3rd, 2026</a></li>
   </ul></li>
+  <li><a href="#class-reading-list" id="toc-class-reading-list" class="nav-link" data-scroll-target="#class-reading-list">Class Reading List</a></li>
   </ul>
 </nav>
     </div>
@@ -214,6 +253,19 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 </details>
 </section>
+<section id="mid-semester-progress-report" class="level4">
+<h4 class="anchored" data-anchor-id="mid-semester-progress-report">Mid-Semester Progress Report</h4>
+<details>
+<summary>
+<strong>Or Click to Show/Hide Pitch Deck</strong>
+</summary>
+<iframe src="6323ProgressReport.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
+</iframe>
+</details>
+</section>
+<section id="shiny-application-link" class="level4">
+<h4 class="anchored" data-anchor-id="shiny-application-link">Shiny Application | <a href="https://martinez2k18.shinyapps.io/epps_6323_final_project/">Link</a></h4>
+</section>
 </section>
 </section>
 <section id="individual-assignments" class="level2">
@@ -227,6 +279,30 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reflections" class="level2">
 <h2 class="anchored" data-anchor-id="reflections">Reflections</h2>
+<section id="ai-for-science-and-the-move-from-prompts-to-research-workflows-april-21st-2026" class="level3">
+<h3 class="anchored" data-anchor-id="ai-for-science-and-the-move-from-prompts-to-research-workflows-april-21st-2026">AI for Science and the Move from Prompts to Research Workflows | April 21st, 2026</h3>
+<p>People toss around the phrase “AI for Science” like another buzzword, but it’s not that simple. If anything, it’s a bit sprawling. At its core, using AI not just to crunch numbers or fit models, but to also nudge the entire scientific process forward: reading papers, spotting patterns, sketching hypotheses, even drafting reports. Not just prediction, in other words, but participation. Some recent surveys frame it as covering the full research loop, from literature digging to peer review, which honestly, starts to sound less like a tool and more like a junior (and often overconfident) lab partner - although are not all junior lab partners overconfident? Some founders at the top of the industry, like Dario Amodei, have gone a step further, arguing that the real promise isn’t faster autocomplete but something closer to “expert-level” scientific assistance, the kind that actually helps decide what experiment to run next . A bold conviction, sure. But so have been all the convictions that have come true so far with AI.</p>
+<p>Now, here’s where things get interesting. Traditional AI use in research is mostly single-shot: you ask a question, get an answer, maybe tweak the prompt and try again. Done. Agentic systems don’t play that game. They stretch things out. They plan, they loop, they call tools, they revise. Instead of one neat response, you get a whole chain of actions unfolding over time. Almost like watching someone think out loud, except they’re also running code, pulling papers, and scribbling notes while they’re at it. Systems like ResearchAgent or those multi-agent “AI Scientist” setups actually iterate: generate an idea, critique it, refine it, test it, repeat . It’s less “here’s your answer” and more “here’s the process.”</p>
+<p>And honestly, that shift, from answers to workflows, changes the rhythm of research. Instead of manually juggling literature searches, data analysis, and write-ups, the agent sort of orchestrates it. Planning modules decide what to do next, tool-use components fetch data or run experiments, memory keeps track of what’s already been tried. There’s even evidence that explicit multi-step planning improves performance compared to reactive, one-step approaches (which, yeah, makes sense if you’ve ever tried to wing a complex project without a plan).</p>
+<p>That said, and this part gets glossed over way too often, it’s not like humans get to kick back and sip coffee while the AI does everything. If anything, the role expands rather than shrinks. You’re less of a hands-on executor and more of a supervisor or commanding officer. Setting direction, checking whether the reasoning holds up, catching weird mistakes (and there will be weird mistakes). Even the more autonomous systems still lean on human judgment to keep things grounded and, well, scientifically sane. Because at the end of the day, science isn’t just pattern-matching, it’s about causality, evidence, and being able to explain “why” something works. And no matter how slick these agentic workflows get, that part? Is still stubbornly human.</p>
+</section>
+<section id="knowledge-graphs-for-research-and-knowledge-mining-april-14th-2026" class="level3">
+<h3 class="anchored" data-anchor-id="knowledge-graphs-for-research-and-knowledge-mining-april-14th-2026">Knowledge Graphs for Research and Knowledge Mining | April 14th, 2026</h3>
+<p>People tend to think of data as rows and columns first, like spreadsheets stretching out forever, but a knowledge graph doesn’t really behave that way. It’s more like a web: messy, interconnected, almost alive in how things link together. At its core, a knowledge graph represents information as entities (nodes) and relationships (edges), forming what researchers often describe as triples: subject, relationship, object. That structure matters because it encodes meaning directly, not just values sitting in isolation. In contrast, a traditional relational database stores data in tables that need to be stitched together through joins, while a vector store does something entirely different, it maps meaning into numerical space for similarity search. Useful, sure, but kind of blind to explicit relationships. In other words, databases store facts, vector stores store proximity, and knowledge graphs store context .<br>
+<br>
+Now, why do relationships matter so much? Because that’s where the “knowledge” part actually kicks in. When entities are connected, you can trace paths, uncover indirect links, and ask layered questions that go beyond surface-level queries. A flat dataset might tell you that a company launched a product and that revenue increased later, but it won’t naturally explain how those events relate unless you manually force that connection. A graph, on the other hand, makes those links explicit. You can follow chains like company -&gt; product -&gt; demand &gt; revenue and start to see patterns emerge. It’s a bit like the difference between reading isolated headlines versus understanding the full story behind them, same pieces, totally different depth.<br>
+<br>
+If I were to sketch a small example from a financial research context, I’d probably start simple with three entities: Company, Financial Metric, and Market Event. Then define relationships such as “influences,” “responds_to,” and “drives_change_in.” For instance, a Market Event (like an interest rate hike) influences a Company, which then drives change in a Financial Metric like revenue or margin. Not perfect, maybe a bit simplified, but it works. This kind of structure allows you to ask questions like, “Which companies were most sensitive to rate changes and saw margin compression afterward?” Try answering that cleanly with a flat dataset. You can do it, but its clunky and full of joins and assumptions.<br>
+<br>
+And that’s really the advantage, if I had to boil it down. Knowledge graphs let you ask “why” and “how” questions, not just “what.” They support multi-step reasoning in a way that spreadsheets just don’t. Research has shown that graph-based representations improve tasks like multi-document question answering because they preserve semantic relationships across data points, making it easier to retrieve and connect relevant information . However, building and maintaining them takes effort, and if the relationships are poorly defined, the whole thing can get messy fast. But when done right, they turn scattered data into something that actually resembles understanding.</p>
+</section>
+<section id="retrieval-augmented-generation-and-research-trustworthiness-april-7th-2026" class="level3">
+<h3 class="anchored" data-anchor-id="retrieval-augmented-generation-and-research-trustworthiness-april-7th-2026">Retrieval-Augmented Generation and Research Trustworthiness | April 7th, 2026</h3>
+<p>Half the battle in working with AI is not in the generation of outputs, but validating whether or not you can actually trust said outputs. That is where Retrieval-Augmented Generation (RAG) becomes essential. In plainest terms, RAG is a setup where an AI doesn’t just pull information from its training memory, but the LLM actually goes out, explores and extracts relevant documents, and then builds a response around that material. It less of a solo act and more like a researcher with a stack of notes spread across their desk: messy, but grounded. For research work in particular, that grounding matters. It hedges the model away from confident guesswork and toward something that resembles evidence-based writing.</p>
+<p>The real question is, does this actually make AI more trustworthy? The answer is complicated. When a model ties its answers to retrieved sources, you can at least trace where ideas are coming from, which feels reassuring in the same way footnotes do in a decent paper. The “hallucination” problem that plagues AI is reduced by the anchoring of responses by real documents, but it is not entirely eliminated. RAG adds a layer of accountability, where you are no longer dealing with pure improvisation; there is now a paper trail to how the generated output comes to fruition.</p>
+<p>That said, people have started poking holes in RAG lately, and not without reason. One common gripe is that retrieval systems can miss the mark, focusing on irrelevant or shallow information from the documents provided; leading the model down the wrong path, defeating the purpose of RAG. Or as the old data science saying goes: “garbage in, garbage out.” There’s also the issue of fragmentation: the AI might stitch together bits from multiple sources, but the result can feel disjointed or oddly stitched. And sometimes, ironically, the presence of sources gives a false sense of authority. Especially if said sources are outdated, biased, or just not very good.</p>
+<p>In the end, RAG is not the silver bullet to mastering AI, instead it is another methodology to treat LLMs as they should be - a tool. Better retrieval methods, more context-aware, can also be used in tandem with RAG to create better results. And since RAG is so dependent on solid sources, selecting quality sources, filtered for credibility, is essential before the model begins to run its output.</p>
+</section>
 <section id="the-advantages-and-limitations-of-llms-march-31st-2026" class="level3">
 <h3 class="anchored" data-anchor-id="the-advantages-and-limitations-of-llms-march-31st-2026">The Advantages and Limitations of LLMs | March 31st, 2026</h3>
 <p>LLMs are, at their best, remarkably efficient pattern synthesizers. They can summarize dense material, translate across domains (technical → plain English, for example), generate structured drafts, and even assist in light data cleaning or coding tasks. In research contexts, that’s huge. Hours of initial groundwork—literature overviews, note consolidation, early-stage framing—can be compressed into minutes. Not perfectly, but close enough to move things forward. They’re especially good at starting things. Blank pages, less so.</p>
@@ -247,9 +323,21 @@ ul.task-list li input[type="checkbox"] {
 <p>It’s one of those questions that sounds clean in theory but gets murky fast in practice -prediction versus explanation. Sometimes, honestly, you don’t need to know why something happens to act on it. Take credit risk models, for example. A bank might use a model that predicts the likelihood of default with high accuracy, even if the internal logic is complex or not easily interpretable. From a purely operational standpoint, that can be enough - decisions get made, losses get managed. But shift into a policy or advisory context, say financial planning for clients, and suddenly explanation matters a lot more. If a portfolio underperforms, it’s not enough to say “the model predicted this outcome.” Clients (and regulators) expect a rationale. Why did it happen? Was it market conditions, asset allocation, timing? Prediction gets you speed; explanation gets you trust. And depending on the setting, one without the other can feel incomplete.</p>
 <p>Now, thinking about a simple causal structure in a financial context - say, the relationship between portfolio diversification and portfolio returns - you could sketch it out like this: diversification -&gt; returns. Straightforward, at least on the surface. But almost immediately, confounders start creeping in. Market conditions, for one - bull versus bear markets can influence both how diversified a portfolio is and how it performs. Investor risk tolerance is another; more risk-tolerant investors might both diversify differently and experience different return profiles. Even time horizon plays a role. So what looks like a clean causal link quickly becomes tangled. To distinguish causation from mere prediction, you’d need to isolate the effect of diversification itself - through controlled comparisons, maybe matching portfolios with similar risk profiles, or using quasi-experimental designs. Otherwise, you’re left with a predictive association: diversified portfolios tend to perform a certain way, but you can’t confidently say diversification caused that outcome. And that distinction (subtle, but critical) is where a lot of real-world analysis either holds up, or quietly falls apart.</p>
 </section>
-<section id="reflection-on-a-machine-learning-pipeline-march-3rd-2026" class="level3">
-<h3 class="anchored" data-anchor-id="reflection-on-a-machine-learning-pipeline-march-3rd-2026">Reflection on a Machine Learning Pipeline | March 3rd, 2026</h3>
-<p>TBP</p>
+<section id="association-rules-data-mining-and-model-evaluation-march-3rd-2026" class="level3">
+<h3 class="anchored" data-anchor-id="association-rules-data-mining-and-model-evaluation-march-3rd-2026">Association rules, data mining, and model evaluation | March 3rd, 2026</h3>
+<section id="a-practical-pipeline-for-global-weapons" class="level4">
+<h4 class="anchored" data-anchor-id="a-practical-pipeline-for-global-weapons">A practical pipeline for Global weapons</h4>
+<p>If I were building a workable machine-learning pipeline from the Global weapons database, I would begin by respecting what the site actually is. It is not just a neat spreadsheet. It is a large, mixed-format encyclopedia that, as of March 2026, advertises 2,847 catalogued systems across 196 countries and 52 categories, with browse paths by system, country, type, and comparisons. Its listing structure already exposes fields such as system, type, origin, status, and year, and recent snippets show records such as KF-21 Boramae and B-21 Raider with type, country, and status labels attached.</p>
+<p>Because the schema is heterogeneous, I would not try to model every weapon class at once on day one. That would be asking for a mess. A bomber page such as B-21 Raider foregrounds fields like wingspan, maximum takeoff weight, unit cost, planned fleet, and status; an air-defense page like Iron Dome emphasizes engagement counts and interceptor cost; a fighter page such as HAL Tejas Mk2 stresses radar range, targets tracked, payload, assembly progress, and delivery timeline; and a fighter page like Chengdu J-20 mixes technical numbers with long-form narrative about engines, production, and avionics. That kind of variation is interesting for a researcher, but it is poison for a first-pass model if you throw it all into one flat matrix without discipline.</p>
+<p>So my first pipeline would subset to one category, probably fighter aircraft. From there, I would set a concrete target variable such as status - for example, in service, flight testing, or under development - because status is analytically meaningful and already appears in the site’s listing language. Then I would follow the same broad logic the course text recommends for data-mining projects: sample if necessary, build a rich array of features, reduce that feature space, fit the model on training data, validate it on held-out data, and compare alternative methods (uploaded course text, p.&nbsp;53). In practical terms, that means: collect fighter pages and listing metadata; normalize units and currencies; parse numeric specs where available; create binary indicators from text for concepts like stealth, AESA radar, sensor fusion, data link integration, or manned-unmanned teaming; one-hot encode origin and subtype; and then split train, validation, and test sets with stratification by status. Since the site advertises API access, I would check that route first; if it proves unusable, I would fall back to a respectful scraper and parser.</p>
+<p>For modeling, I would keep the sequence boring on purpose at the start: a regularized logistic model as a baseline, then a tree-based model such as random forest or gradient boosting, and then maybe a text-aware model if the prose fields carry signal that the structured specs miss. After that, I would add one genuinely data-mining layer: association rules on binarized design features. That would not replace prediction, but it could surface recurring design packages that a flat accuracy score would never reveal on its own - things like which capability bundles tend to coexist in aircraft at similar maturity levels. That is where data mining, in the richer sense of the term, starts to become more than just classification.</p>
+</section>
+<section id="what-error-analysis-adds" class="level4">
+<h4 class="anchored" data-anchor-id="what-error-analysis-adds">What error analysis adds</h4>
+<p>The course text is useful here because it pushes beyond a single score. Accuracy, or overall classification rate, is only one summary of fit. A confusion matrix opens that summary back up and shows which cases are true positives, true negatives, false positives, and false negatives; the same chapter also highlights sensitivity, specificity, and the unavoidable trade-off between false positives and false negatives (uploaded course text, pp.&nbsp;39-40). In a Global weapons model, that matters a lot. A classifier that looks “pretty accurate” overall might still be systematically confusing flight-testing systems with in-service systems, or doing well on countries with dense documentation while failing on countries with sparse or text-heavy entries. Accuracy by itself smooths over those patterns, which is exactly the problem.</p>
+<p>In summary, error analysis showed me where the model was making the wrong kind of mistakes, not just how many mistakes it made. The accuracy score compressed everything into one headline number, but the confusion matrix and subgroup review exposed whether the model was confusing adjacent status categories, relying too heavily on one country or one documentation style, or failing whenever structured specs were missing. That mattered because some errors were understandable ambiguity, while others were signs of shallow pattern-matching. The course text defines overfitting as fitting not only the signal in the training data, but also the noise, which is why a model can look excellent on familiar data and then stumble on new cases (uploaded course text, pp.&nbsp;32-33). I ended up thinking about overfitting as the difference between knowledge and residue: knowledge is the structure that travels to new data, while noise is the leftover clutter the model memorizes because it happened to be there. Amodei makes a similar point from another angle when he argues that prediction alone does not necessarily yield insight; a model can capture patterns that are hard to understand and still fail to provide real explanatory value. That is exactly why error analysis matters. It tests whether the model learned something durable, or just something convenient.</p>
+<p>Taken together, the sources point to a pretty coherent answer. Association rules are a noncausal, pattern-finding method that works especially well on categorical data and is often judged by support, confidence, and lift. Unsupervised learning is one methodological branch inside the larger practice of data mining, not the whole thing. And for a source like Global weapons, the smartest path is not to toss the entire encyclopedia into one model and hope for magic; it is to define a narrow prediction target, engineer comparable features, validate carefully, and then use error analysis to separate transferable structure from sample-specific noise. That last distinction is really the center of the whole exercise. The model is only useful if it learns signal that survives contact with new data.</p>
+</section>
 </section>
 <section id="knowledge-information-and-ai-february-24th-2026" class="level3">
 <h3 class="anchored" data-anchor-id="knowledge-information-and-ai-february-24th-2026">Knowledge, Information, and AI | February 24th, 2026</h3>
@@ -271,9 +359,31 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="breiman-vs.-galit-february-3rd-2026">Breiman Vs. Galit | February 3rd, 2026</h3>
 <p>Breiman’s “Statistical Modeling: The Two Cultures” and Shmueli’s “To Explain or to Predict?” approach statistical modeling from closely related, yet meaningfully distinct, perspectives. Breiman frames the divide as a fundamental cultural split between data modeling and algorithmic modeling, advocating strongly for the latter as a more pragmatic approach. His argument is direct, emphasizing predictive accuracy and real-world performance over traditional inferential assumptions. In contrast, Shmueli offers a more structured and reconciliatory framework, distinguishing between explanatory and predictive modeling as separate, but equally valid, objectives within statistical practice.</p>
 <p>While Breiman’s work challenges the statistical community to reconsider its priorities, Shmueli refines that challenge by formalizing the distinction and clarifying when each approach is appropriate. Breiman’s tone suggests a shift in paradigm, whereas Shmueli’s analysis provides guidance for coexistence and methodological alignment. Taken together, the two articles complement one another: Breiman identifies the problem, and Shmueli organizes the solution space. The combination ultimately reinforces the importance of aligning modeling techniques with the intended goal, whether explanation or prediction, rather than treating statistical methods as interchangeable.</p>
-
-
 </section>
+</section>
+<section id="class-reading-list" class="level2">
+<h2 class="anchored" data-anchor-id="class-reading-list">Class Reading List</h2>
+<p>Note: Reflections are in response to readings listed in order read.</p>
+<ul>
+<li><p>Bowen, J. A., &amp; Watson, C. E. (2024). Teaching with AI: a practical guide to a new era of human learning. Johns Hopkins University Press.</p></li>
+<li><p>Wickham, Hadley and Garrett Grolemund and. 2023. R for Data Science. Latest online edition (<a href="https://r4ds.hadley.nz)" class="uri">https://r4ds.hadley.nz)</a></p></li>
+<li><p>Breiman, Leo. 2001. “Statistical modeling: The two cultures (with comments and a rejoinder by the author)”. Statistical Science, 16(3), pp.199-231.</p></li>
+<li><p>Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for data science. O’Reilly Media, Inc.&nbsp;(Online: <a href="https://r4ds.hadley.nz)" class="uri">https://r4ds.hadley.nz)</a> (WRG) (Chapters 1-8)</p></li>
+<li><p>Silge, Julia &amp; Robinson, David. 2019. Text mining with R: a tidy approach. Latest online edition (<a href="https://www.tidytextmining.com/" class="uri">https://www.tidytextmining.com/</a></p></li>
+<li><p>Attewell, Paul, and David Monaghan. 2015. Data mining for the social sciences: An introduction. Univ of California Press. (AM) Chapters 1 - 4</p></li>
+<li><p>Young, Cristobal and Katherine Holsteen. 2017. “Model Uncertainty and Robustness: A Computational Framework for Multimodel Analysis” Sociological Methods &amp; Research. Vol. 46(1) 3-40</p></li>
+<li><p>Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)</p></li>
+<li><p>Chang, Yupeng, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen et al.&nbsp;2024. “A survey on evaluation of large language models.” ACM transactions on intelligent systems and technology 15, no. 31-45.</p></li>
+<li><p>Min, Bonan, Hayley Ross, Elior Sulem, Amir Pouran Ben Veyseh, Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heintz, and Dan Roth. 2023. “Recent advances in natural language processing via large pre-trained language models: A survey.” ACM Computing Surveys 56, no. 2: 1-40.</p></li>
+<li><p>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., &amp; Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30, 5998–6008. (must read for all language model studies and transformer model)</p></li>
+<li><p>Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)</p></li>
+<li><p>Linegar, Mitchell, Rafal Kocielnik, and R. Michael Alvarez. 2023. “Large language models and political science.” Frontiers in Political Science 5.</p></li>
+<li><p>Thapa, Surendrabikram, Shuvam Shiwakoti, Siddhant Bikram Shah, Surabhi Adhikari, Hariram Veeramani, Mehwish Nasim, and Usman Naseem. 2025. “Large language models (LLM) in computational social science: prospects, current state, and challenges.” Social Network Analysis and Mining 15, no. 1: 1-30.</p></li>
+<li><p>Koroteev, Mikhail V. “BERT: a review of applications in natural language processing and understanding.” arXiv preprint arXiv:2103.11943 (2021).</p></li>
+<li><p>Molnar, Christoph. 2019. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable. (<a href="https://christophm.github.io/interpretable-ml-book/)" class="uri">https://christophm.github.io/interpretable-ml-book/)</a></p></li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->

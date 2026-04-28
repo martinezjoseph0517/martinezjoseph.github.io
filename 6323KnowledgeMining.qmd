@@ -35,12 +35,27 @@ Made in collaboration with the brilliant minds of Soha Arian, Kasra Akbari, and 
 
 </details>
 
+
+#### Mid-Semester Progress Report
+
+<details>
+
+<summary><strong>Or Click to Show/Hide Pitch Deck</strong></summary>
+
+<iframe src="6323ProgressReport.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
+
+</iframe>
+
+</details>
+
+#### Shiny Application | [Link](https://martinez2k18.shinyapps.io/epps_6323_final_project/)
+
 ## Individual Assignments
 
--   [Assignment 1 - February 10th, 2026](6323-A1.qmd)
--   [Assignment 2 - February 17th, 2026](6323-A2.qmd)
--   [Assignment 3 - March 24th, 2026](6323-A3.qmd)
--   [Assignment 4 - March 31st, 2026](6323-A4.qmd)
+- [Assignment 1 - February 10th, 2026](6323-A1.qmd)
+- [Assignment 2 - February 17th, 2026](6323-A2.qmd)
+- [Assignment 3 - March 24th, 2026](6323-A3.qmd)
+- [Assignment 4 - March 31st, 2026](6323-A4.qmd)
 
 ## Reflections
 
@@ -152,34 +167,34 @@ While Breiman’s work challenges the statistical community to reconsider its pr
 
 Note: Reflections are in response to readings listed in order read.
 
--   Bowen, J. A., & Watson, C. E. (2024). Teaching with AI: a practical guide to a new era of human learning. Johns Hopkins University Press.
+- Bowen, J. A., & Watson, C. E. (2024). Teaching with AI: a practical guide to a new era of human learning. Johns Hopkins University Press.
 
--   Wickham, Hadley and Garrett Grolemund and. 2023. R for Data Science. Latest online edition (<https://r4ds.hadley.nz)>
+- Wickham, Hadley and Garrett Grolemund and. 2023. R for Data Science. Latest online edition (<https://r4ds.hadley.nz)>
 
--   Breiman, Leo. 2001. “Statistical modeling: The two cultures (with comments and a rejoinder by the author)”. Statistical Science, 16(3), pp.199-231.
+- Breiman, Leo. 2001. “Statistical modeling: The two cultures (with comments and a rejoinder by the author)”. Statistical Science, 16(3), pp.199-231.
 
--   Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for data science. O'Reilly Media, Inc. (Online: <https://r4ds.hadley.nz)> (WRG) (Chapters 1-8)
+- Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023. R for data science. O'Reilly Media, Inc. (Online: <https://r4ds.hadley.nz)> (WRG) (Chapters 1-8)
 
--   Silge, Julia & Robinson, David. 2019. Text mining with R: a tidy approach. Latest online edition (<https://www.tidytextmining.com/>
+- Silge, Julia & Robinson, David. 2019. Text mining with R: a tidy approach. Latest online edition (<https://www.tidytextmining.com/>
 
--   Attewell, Paul, and David Monaghan. 2015. Data mining for the social sciences: An introduction. Univ of California Press. (AM) Chapters 1 - 4
+- Attewell, Paul, and David Monaghan. 2015. Data mining for the social sciences: An introduction. Univ of California Press. (AM) Chapters 1 - 4
 
--   Young, Cristobal and Katherine Holsteen. 2017. “Model Uncertainty and Robustness: A Computational Framework for Multimodel Analysis” Sociological Methods & Research. Vol. 46(1) 3-40
+- Young, Cristobal and Katherine Holsteen. 2017. “Model Uncertainty and Robustness: A Computational Framework for Multimodel Analysis” Sociological Methods & Research. Vol. 46(1) 3-40
 
--   Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)
+- Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)
 
--   Chang, Yupeng, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen et al. 2024. “A survey on evaluation of large language models.” ACM transactions on intelligent systems and technology 15, no. 31-45.
+- Chang, Yupeng, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen et al. 2024. “A survey on evaluation of large language models.” ACM transactions on intelligent systems and technology 15, no. 31-45.
 
--   Min, Bonan, Hayley Ross, Elior Sulem, Amir Pouran Ben Veyseh, Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heintz, and Dan Roth. 2023. “Recent advances in natural language processing via large pre-trained language models: A survey.” ACM Computing Surveys 56, no. 2: 1-40.
+- Min, Bonan, Hayley Ross, Elior Sulem, Amir Pouran Ben Veyseh, Thien Huu Nguyen, Oscar Sainz, Eneko Agirre, Ilana Heintz, and Dan Roth. 2023. “Recent advances in natural language processing via large pre-trained language models: A survey.” ACM Computing Surveys 56, no. 2: 1-40.
 
--   Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30, 5998–6008. (must read for all language model studies and transformer model)
+- Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30, 5998–6008. (must read for all language model studies and transformer model)
 
--   Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)
+- Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics, 4171–4186. (BERT model, a cornerstone for modern contextual language representations)
 
--   Linegar, Mitchell, Rafal Kocielnik, and R. Michael Alvarez. 2023. "Large language models and political science." Frontiers in Political Science 5.
+- Linegar, Mitchell, Rafal Kocielnik, and R. Michael Alvarez. 2023. "Large language models and political science." Frontiers in Political Science 5.
 
--   Thapa, Surendrabikram, Shuvam Shiwakoti, Siddhant Bikram Shah, Surabhi Adhikari, Hariram Veeramani, Mehwish Nasim, and Usman Naseem. 2025. "Large language models (LLM) in computational social science: prospects, current state, and challenges." Social Network Analysis and Mining 15, no. 1: 1-30.
+- Thapa, Surendrabikram, Shuvam Shiwakoti, Siddhant Bikram Shah, Surabhi Adhikari, Hariram Veeramani, Mehwish Nasim, and Usman Naseem. 2025. "Large language models (LLM) in computational social science: prospects, current state, and challenges." Social Network Analysis and Mining 15, no. 1: 1-30.
 
--   Koroteev, Mikhail V. "BERT: a review of applications in natural language processing and understanding." arXiv preprint arXiv:2103.11943 (2021).
+- Koroteev, Mikhail V. "BERT: a review of applications in natural language processing and understanding." arXiv preprint arXiv:2103.11943 (2021).
 
--   Molnar, Christoph. 2019. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable. (<https://christophm.github.io/interpretable-ml-book/)>
+- Molnar, Christoph. 2019. Interpretable Machine Learning: A Guide for Making Black Box Models Explainable. (<https://christophm.github.io/interpretable-ml-book/)>
