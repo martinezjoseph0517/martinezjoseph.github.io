@@ -9,7 +9,7 @@ format:
 
 # AI Lab 1
 
-```{r}
+```{r, eval = FALSE}
 # Connect PostgreSQL database using R
 # Packages: DBI, odbc, RPostgres
 # Documentation:

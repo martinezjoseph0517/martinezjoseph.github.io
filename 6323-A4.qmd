@@ -7,7 +7,7 @@ format:
     code-summary: "Show the Code"
 ---
 
-# Visualization Code
+# What qualifications, responsibilities, and institutional priorities are most emphasized in APSA eJobs job advertisements, and how do these differ across postings?
 
 ```{r}
 library(tidyverse)
@@ -107,4 +107,162 @@ wordcloud(
 
 # ---- Table ----
 datatable(article_data, options = list(pageLength = 25), rownames = FALSE)
+```
+
+```{r}
+pkgs <- c("pdftools", "quanteda", "quanteda.textstats", "quanteda.textplots", "ggplot2")
+new_pkgs <- pkgs[!pkgs %in% rownames(installed.packages())]
+if (length(new_pkgs)) install.packages(new_pkgs)
+
+library(pdftools)
+library(quanteda)
+library(quanteda.textstats)
+library(quanteda.textplots)
+library(ggplot2)
+ 
+# 1) Folder with your PDFs
+pdf_folder <- "C:/Users/marti/OneDrive/Documents/Datasets/PSJobs201606_202603"
+ 
+# 2) Get all PDF file paths
+files <- list.files(pdf_folder, pattern = "\\.pdf$", full.names = TRUE)
+ 
+# Stop early if no PDFs found
+if (length(files) == 0) {
+  stop("No PDF files found. Check your folder path.")
+}
+ 
+# 3) Read each PDF safely
+# pdf_text() returns one character string per page, so we collapse pages into one doc
+texts <- lapply(files, function(f) {
+  tryCatch({
+    paste(pdf_text(f), collapse = "\n")
+  }, error = function(e) {
+    NA_character_
+  })
+})
+ 
+# 4) Build a data frame
+txt_df <- data.frame(
+  doc_id = basename(files),
+  text = unlist(texts),
+  stringsAsFactors = FALSE
+)
+ 
+# 5) Keep only rows with usable text
+txt_df <- subset(txt_df, !is.na(text) & nchar(text) > 500)
+ 
+if (nrow(txt_df) == 0) {
+  stop("No usable text was extracted from the PDFs.")
+}
+ 
+# Optional: inspect the first document
+cat(substr(txt_df$text[1], 1, 500), "\n\n")
+ 
+# 6) Create corpus
+corp <- corpus(txt_df)
+ 
+# 7) Tokenize and clean
+toks <- tokens(
+  corp,
+  remove_punct = TRUE,
+  remove_numbers = TRUE,
+  remove_symbols = TRUE
+)
+ 
+toks <- tokens_tolower(toks)
+toks <- tokens_remove(toks, stopwords("english"))
+ 
+# Optional: remove common job-ad words
+custom_stop <- c(
+  "position", "positions", "university", "applicant", "applicants",
+  "job", "jobs", "required", "candidate", "candidates"
+)
+ 
+toks_clean <- tokens_remove(toks, custom_stop)
+ 
+# 8) Build dfm
+dfmat <- dfm(toks_clean)
+ 
+# 9) Diagnostics
+print(dfmat)
+cat("Documents:", ndoc(dfmat), "\n")
+cat("Features:", nfeat(dfmat), "\n")
+cat("Total token count in dfm:", sum(dfmat), "\n")
+print(topfeatures(dfmat, 20))
+ 
+# 10) Error fix:
+# If custom_stop removed too much, rebuild without custom_stop
+if (sum(dfmat) == 0) {
+  message("dfm is empty after custom stopwords. Rebuilding with only standard stopwords...")
+  dfmat <- dfm(toks)
+  print(dfmat)
+  cat("Documents:", ndoc(dfmat), "\n")
+  cat("Features:", nfeat(dfmat), "\n")
+  cat("Total token count in dfm:", sum(dfmat), "\n")
+  print(topfeatures(dfmat, 20))
+}
+ 
+# If still empty, the PDF extraction is the problem
+if (sum(dfmat) == 0) {
+  stop("dfm still has no non-zero values. The extracted PDF text is too empty/garbled.")
+}
+ 
+# 11) Frequency table
+freq <- textstat_frequency(dfmat, n = 20)
+print(freq)
+ 
+# 12) Top-terms plot
+ggplot(freq, aes(x = reorder(feature, frequency), y = frequency)) +
+  geom_col(fill = "steelblue") +
+  coord_flip() +
+  theme_bw() +
+  labs(
+    title = "Top Terms in PSJobs PDFs",
+    x = "Term",
+    y = "Frequency"
+  )
+ 
+# 13) Word cloud
+dfmat_trim <- dfm_trim(dfmat, min_termfreq = 10)
+set.seed(100)
+textplot_wordcloud(dfmat_trim)
+ 
+# 14) KWIC for useful terms
+kwic(toks, pattern = c("python", "sql", "research", "policy", "analysis"))
+ 
+# 15) Selected skill counts
+skill_words <- c("python", "sql", "research", "policy", "analysis", "stata", "r")
+ 
+skill_counts <- data.frame(
+  skill = skill_words,
+  count = sapply(skill_words, function(w) {
+    if (w %in% featnames(dfmat)) as.numeric(sum(dfmat[, w])) else 0
+  })
+)
+ 
+print(skill_counts)
+ 
+# 16) Colored skill chart
+ggplot(skill_counts, aes(x = reorder(skill, count), y = count, fill = skill)) +
+  geom_col(width = 0.7) +
+  coord_flip() +
+  scale_fill_manual(values = c(
+    "python" = "#4E79A7",
+    "sql" = "#F28E2B",
+    "research" = "#E15759",
+    "policy" = "#76B7B2",
+    "analysis" = "#59A14F",
+    "stata" = "#EDC948",
+    "r" = "#B07AA1"
+  )) +
+  theme_bw() +
+  labs(
+    title = "Selected Skill Mentions in PSJobs PDFs",
+    x = "Skill",
+    y = "Count"
+  ) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(hjust = 0.5, face = "bold")
+  )
 ```
