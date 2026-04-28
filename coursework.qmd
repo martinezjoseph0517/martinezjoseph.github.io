@@ -6,6 +6,6 @@ editor: visual
 
 Welcome to my coursework page for the MS Social Data Science and Research program at the University of Texas, Dallas.
 
--   [EPPS 6356 Data Visualization | Fall 2025](epps6356.qmd)
--   [EPPS 6323 Knowledge Mining | Spring 2026](6323KnowledgeMining.qmd)
--   [EPPS 6354 Information Management | Spring 2026](6354InfoManagement.qmd)
+- [EPPS 6356 Data Visualization | Fall 2025](epps6356.qmd)
+- [EPPS 6323 Knowledge Mining | Spring 2026](6323KnowledgeMining.qmd)
+- [EPPS 6354 Information Management | Spring 2026](6354InfoManagement.qmd)

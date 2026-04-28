@@ -1,133 +1,19 @@
 ---
-title: "Welcome to My Website!"
-format: html
+format:
+  html:
+    include-in-header:
+      - text: |
+          <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    include-after-body:
+      - text: |
+          <script src="js/globe-bg.js"></script>
 ---
 
-Hey! I am Joseph Martinez.
-
-A financial professional and graduate student utilizing data science to maximize opportunities for clientele.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(quantmod)
-library(dplyr)
-library(zoo)
-library(plotly)
-
-# Load data
-symbols <- c("SPY", "QQQ", "DIA")
-getSymbols(symbols, src = "yahoo", from = "2020-01-01", to = "2025-01-01")
-
-# Process ETF data function
-process_etf <- function(etf_xts, etf_symbol) {
-  df <- data.frame(Date = index(etf_xts), coredata(etf_xts))
-  close_col <- df[, grep("Close", names(df))]
-  
-  df %>%
-    mutate(
-      ETF = etf_symbol,
-      Close = close_col,
-      Daily_Return = (Close - lag(Close)) / lag(Close),
-      MA_50 = zoo::rollmean(Close, 50, fill = NA, align = "right"),
-      MA_200 = zoo::rollmean(Close, 200, fill = NA, align = "right")
-    ) %>%
-    filter(!is.na(Daily_Return))
-}
-
-SPY_df <- process_etf(SPY, "SPY")
-QQQ_df <- process_etf(QQQ, "QQQ")
-DIA_df <- process_etf(DIA, "DIA")
-
-all <- bind_rows(SPY_df, QQQ_df, DIA_df)
-
-p <- plot_ly(all, x = ~Date)
-
-# Trace index groups
-trace_index <- list(
-  SPY = c(1,2,3),
-  QQQ = c(4,5,6),
-  DIA = c(7,8,9)
-)
-
-# SPY traces
-p <- p %>%
-  add_lines(data = SPY_df, y = ~Close, name = "SPY Price") %>%
-  add_lines(data = SPY_df, y = ~MA_50, name = "SPY MA50", line = list(dash = "dash")) %>%
-  add_lines(data = SPY_df, y = ~MA_200, name = "SPY MA200", line = list(dash = "dot"))
-
-# QQQ traces
-p <- p %>%
-  add_lines(data = QQQ_df, y = ~Close, name = "QQQ Price") %>%
-  add_lines(data = QQQ_df, y = ~MA_50, name = "QQQ MA50", line = list(dash = "dash")) %>%
-  add_lines(data = QQQ_df, y = ~MA_200, name = "QQQ MA200", line = list(dash = "dot"))
-
-# DIA traces
-p <- p %>%
-  add_lines(data = DIA_df, y = ~Close, name = "DIA Price") %>%
-  add_lines(data = DIA_df, y = ~MA_50, name = "DIA MA50", line = list(dash = "dash")) %>%
-  add_lines(data = DIA_df, y = ~MA_200, name = "DIA MA200", line = list(dash = "dot"))
-
-# Function to show/hide ETF groups
-make_visibility <- function(show_etfs) {
-  visible <- rep(FALSE, 9)
-  for (etf in show_etfs) visible[trace_index[[etf]]] <- TRUE
-  visible
-}
-
-# Apply Lux-style theme
-p <- p %>%
-  layout(
-    title = list(
-      text = "Index ETF Price Over Time",
-      font = list(size = 20, family = "Arial", color = "#333333")
-    ),
-    plot_bgcolor = "#f8f9fa",   # Lux background light-gray
-    paper_bgcolor = "#ffffff",
-    xaxis = list(
-      title = "Date",
-      gridcolor = "#e9ecef",    # subtle Lux grid
-      linecolor = "#ced4da",
-      zerolinecolor = "#e9ecef",
-      tickfont = list(color = "#495057"),
-      titlefont = list(color = "#495057")
-    ),
-    yaxis = list(
-      title = "Price",
-      gridcolor = "#e9ecef",
-      linecolor = "#ced4da",
-      zerolinecolor = "#e9ecef",
-      tickfont = list(color = "#495057"),
-      titlefont = list(color = "#495057")
-    ),
-    legend = list(
-      bgcolor = "rgba(255,255,255,0)",
-      bordercolor = "#dee2e6",
-      borderwidth = 1,
-      font = list(color = "#333333")
-    ),
-    updatemenus = list(
-      list(
-        type = "buttons",
-        direction = "right",
-        x = 0.5, y = 1.15,
-        showactive = TRUE,
-        bgcolor = "#e9ecef",
-        bordercolor = "#adb5bd",
-        buttons = list(
-          list(label = "All", method = "restyle",
-               args = list("visible", make_visibility(c("SPY","QQQ","DIA")))),
-          list(label = "SPY", method = "restyle",
-               args = list("visible", make_visibility(c("SPY")))),
-          list(label = "QQQ", method = "restyle",
-               args = list("visible", make_visibility(c("QQQ")))),
-          list(label = "DIA", method = "restyle",
-               args = list("visible", make_visibility(c("DIA"))))
-        )
-      )
-    )
-  )
-
-p
-
+```{=html}
+<section class="hero">
+  <canvas id="globe-bg"></canvas>
+  <div class="hero-content">
+    <p>Hi, I am <strong>Joseph Martinez</strong> — a financial professional and graduate student utilizing data science to maximize understandings of markets both domestic and global.</p>
+  </div>
+</section>
 ```
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
