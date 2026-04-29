@@ -6,3 +6,9 @@ format:
      code-fold: true
      code-summary: "Show the Code"
 ---
+
+::: big-iframe
+<iframe src="https://martinez2k18.shinyapps.io/EPPS6354Assignment8/">
+
+</iframe>
+:::

@@ -148,7 +148,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sql-exercise-in-progress" id="toc-sql-exercise-in-progress" class="nav-link active" data-scroll-target="#sql-exercise-in-progress">SQL Exercise: (In Progress)</a></li>
+  <li><a href="#analyzing-json-and-xml-websites-structure-and-composition" id="toc-analyzing-json-and-xml-websites-structure-and-composition" class="nav-link active" data-scroll-target="#analyzing-json-and-xml-websites-structure-and-composition">Analyzing JSON and XML Websites’ Structure and Composition</a></li>
+  <li><a href="#sql-exercise-in-progress" id="toc-sql-exercise-in-progress" class="nav-link" data-scroll-target="#sql-exercise-in-progress">SQL Exercise: (In Progress)</a></li>
   <li><a href="#r-postgresql-exercise-in-progress" id="toc-r-postgresql-exercise-in-progress" class="nav-link" data-scroll-target="#r-postgresql-exercise-in-progress">R &amp; PostgreSQL Exercise: (In Progress)</a></li>
   </ul>
 </nav>
@@ -175,13 +176,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>###Analyzing JSON and XML Websites’ Structure and Compostion</p>
+<section id="analyzing-json-and-xml-websites-structure-and-composition" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-json-and-xml-websites-structure-and-composition">Analyzing JSON and XML Websites’ Structure and Composition</h3>
 <p>Funny how you can tell a lot about a system just by the way its data looks. Take JSONPlaceholder, for instance, it’s almost too neat. Everything comes back as tidy key–value pairs, grouped into arrays of objects like posts or users, with fields that rarely surprise you. It mimics a RESTful API, where you hit a URL and get JSON back, no fuss. Underneath, it behaves like a NoSQL-style document setup (even if it’s just simulated), where each object stands on its own without rigid table rules. It’s simple on purpose—kind of like training wheels, but you still learn how to ride.</p>
 <p>Then there’s the GitHub API, which feels like JSONPlaceholder after a few cups of coffee and a promotion. Same JSON format, sure, but way more layered—objects nested inside arrays, links pointing to other endpoints, responses that almost spiral if you keep following them. It’s still built on REST architecture, but behind the scenes you’re dealing with serious infrastructure, usually relational databases that enforce structure long before the data reaches you. Add in pagination, caching, and rate limits.</p>
-<p>Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags—<channel>, <item>,</item></channel></p>
+Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, “<channel>, <item>,
 <title>
-&lt;p&gt;—like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.&lt;/p&gt;
-&lt;p&gt;And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested &lt;Cube&gt; elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.&lt;/p&gt;
+&lt;p&gt;,” like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.&lt;/p&gt;
+&lt;p&gt;And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested “&lt;Cube&gt;” elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.&lt;/p&gt;
+&lt;/section&gt;
 &lt;section id="sql-exercise-in-progress" class="level3"&gt;
 &lt;h3&gt;SQL Exercise: (In Progress)&lt;/h3&gt;
 &lt;/section&gt;
@@ -601,4 +604,4 @@ ul.task-list li input[type="checkbox"] {
 &lt;/body&gt;
 
 &lt;/html&gt;
-</title></main></div></body></html>
+</title></item></channel></section></main></div></body></html>

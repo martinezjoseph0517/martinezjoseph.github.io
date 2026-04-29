@@ -8,11 +8,13 @@ format: html
 
 ### Draw a schema diagram for the following bank database: - branch(branch_name, branch_city, assets) - customer(ID_customer_name, customer_street, customer_city) - loan(loan_number, branch_name, amount) - borrower(ID, loan_number) - account(account_number, branch_name, balance) - depositor(ID, account_number)
 
-![](C:/Users\marti\OneDrive\Desktop\test\6354-A2-P1.jpg)
+```{=html}
+<img src="6354-A2-P1.jpg" alt="Photo"/>
+```
 
 ### Consider the above bank database. Assume that branch names (branch_name) and customer names (customer_name) uniquely identify branches and customers, but loans and accounts can be associated with more than one customer.
 
-#### i. What are the appropriate primary keys? (Underline each in diagram) 
+#### i. What are the appropriate primary keys? (Underline each in diagram)
 
 In the given bank database, the primary keys are chosen based on the attributes that uniquely identify each record in its respective relations. Since the problem states that branch names uniquely identify branches, the attribute branch_name serves as the primary key for the branch relation. Similarly, because customer names uniquely identify customers, the attribute customer_name is the primary key for the customer relation. In the loan relation, each loan is uniquely identified by loan_number, so it becomes the primary key. For the account relation, account_number uniquely identifies each account and therefore is its primary key. However, the problem also states that loans and accounts can be associated with more than one customer, which creates many-to-many relationships. To handle this, the borrower relation uses a composite primary key consisting of (customer_name, loan_number) to uniquely identify each customer–loan combination. Likewise, the depositor relation uses a composite primary key (customer_name, account_number) to uniquely identify each customer–account association. These composite keys ensure that multiple customers can share loans or accounts while still maintaining unique records in the relationship tables.
 
