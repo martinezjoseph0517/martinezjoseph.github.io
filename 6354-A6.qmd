@@ -7,19 +7,15 @@ format:
      code-summary: "Show the Code"
 ---
 
-###Analyzing JSON and XML Websites' Structure and Compostion
+### Analyzing JSON and XML Websites' Structure and Composition
 
 Funny how you can tell a lot about a system just by the way its data looks. Take JSONPlaceholder, for instance, it’s almost too neat. Everything comes back as tidy key–value pairs, grouped into arrays of objects like posts or users, with fields that rarely surprise you. It mimics a RESTful API, where you hit a URL and get JSON back, no fuss. Underneath, it behaves like a NoSQL-style document setup (even if it’s just simulated), where each object stands on its own without rigid table rules. It’s simple on purpose—kind of like training wheels, but you still learn how to ride.
 
 Then there’s the GitHub API, which feels like JSONPlaceholder after a few cups of coffee and a promotion. Same JSON format, sure, but way more layered—objects nested inside arrays, links pointing to other endpoints, responses that almost spiral if you keep following them. It’s still built on REST architecture, but behind the scenes you’re dealing with serious infrastructure, usually relational databases that enforce structure long before the data reaches you. Add in pagination, caching, and rate limits.
 
-Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags—<channel>, <item>,
+Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, "<channel>, <item>, <title>," like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
 
-<title>
-
-—like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
-
-And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested <Cube> elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.
+And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested "<Cube>" elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.
 
 ### SQL Exercise: (In Progress)
 

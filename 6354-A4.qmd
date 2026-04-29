@@ -8,23 +8,25 @@ format: html
 
 ##Design an E-R diagram for keeping track of the scoring statistics of your favorite sports team. You should store the matches played, the scores in each match, the players in each match, and individual player scoring statistics for each match. Summary statistics should be modeled as derived attributes with an explanation as to how they are computed. (Consult: Practice Exercise solutions on textbook website)
 
-### a) Draw the E-R diagram using draw.io. Read this website for instructions.
-### b) Expand to all teams in the league (Hint: add team entity)
-![](C:/Users/marti/OneDrive/Desktop/test/6354-A4-P2.png)
+### a) & b) Draw the E-R diagram using draw.io. Read this website for instructions & expand to all teams in the league (Hint: add team entity)
+
+<img src="6354-A4-P2.jpg" alt="Photo"/>
 
 ## SQL exercise:
 
 ### a) Consider the query select course_id, semester, year, sec_id, avg (tot_cred) from takes natural join student where year = 2017 group by course_id, semester, year, sec_id having count (ID) \>= 2;
 
 #### i. Explain why appending natural join section in the from clause would not change the result. (Consult Ch. 4, 4.1.1)
+
 Appending NATURAL JOIN section to the FROM clause does not change the result because the query (course_id, semester, year, and sec_id) already identifies each section. These attributes form the primary key of the table, and are present in the takes relation that is being grouped in the query.
 
 When the natural join with the section is added, the database should match rows using those attributes. Each combination corresponds to one row in the section; the join would not add new rows nor remove existing ones. Therefore, the grouping and aggregate calculations (AVG(tot_cred) and COUNT(ID)) should remain the same, along with the final output of the query.
 
-#### ii. Test the results using the Online SQL interpreter (https://www.dbbook.com/university-lab-dir/sqljs.html)
+#### ii. Test the results using the Online SQL interpreter (https://www.db-book.com/university-lab-dir/sqljs.html)
 
 ### b) Write an SQL query using the university schema to find the ID of each student who has never taken a course at the university. Do this using no subqueries and no set operations (use an outer join). (Consult Ch. 4, 4.1.3)
-```sql
+
+``` sql
 SELECT s.ID
 FROM student AS s
 LEFT JOIN takes AS t ON s.ID = t.ID
@@ -32,7 +34,8 @@ WHERE t.ID IS NULL;
 ```
 
 ### c) Consider the following database, write a query to find the ID of each employee with no manager. Note that an employee may simply have no manager listed or may have a null manager(use natural left outer join). (Consult Ch. 4, 4.1.3)
-```sql
+
+``` sql
 SELECT e.ID
 FROM employee AS e
 NATURAL LEFT OUTER JOIN manages AS m

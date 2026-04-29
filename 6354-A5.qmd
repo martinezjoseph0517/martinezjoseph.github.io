@@ -36,7 +36,7 @@ In this example, starting from Employee, the relationships lead to Department, t
 
 ## 2. Construct an E-R diagram for a hospital with a set of patients and a set of medical doctors. Associate with each patient a log of the various tests and examinations conducted. (HINT: use miro.com to draw the diagram with relationship sets).
 
-![](C:/Users/marti/OneDrive/Desktop/test/6354-A5-1.png)
+<img src="6354-A5-1.png" alt="Photo"/>
 
 ## 3. We can convert any weak entity set to a strong entity set by simply adding appropriate attributes. Why, then, do we have weak entity sets?
 

@@ -33,11 +33,11 @@ You can view and/or download our proposal presentation here.
 
 **Sentiment Trend Analysis**
 
--   [Web Crawler to Collect News Article Data](WebCrawler.qmd)
+- [Web Crawler to Collect News Article Data](WebCrawler.qmd)
 
 **Final Presentation**
 
--   [Link](FinalPresentation.qmd)
+- [Link](FinalPresentation.qmd)
 
 **Final Paper**
 
