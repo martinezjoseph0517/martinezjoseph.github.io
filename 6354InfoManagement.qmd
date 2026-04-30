@@ -4,8 +4,11 @@ format: html
 ---
 
 ## Information Management Project
-### Cosmic Trajectories | Spring 2026
-#### Project Pitch | Feb 2026
+
+### Cosmic Trajectories \| Spring 2026
+
+#### Project Pitch \| Feb 2026
+
 <details>
 
 <summary><strong>Or Click to Show/Hide Pitch</strong></summary>
@@ -16,7 +19,8 @@ format: html
 
 </details>
 
-#### Pitch Deck | Feb 2026
+#### Pitch Deck \| Feb 2026
+
 <details>
 
 <summary><strong>Or Click to Show/Hide Pitch Deck</strong></summary>
@@ -27,7 +31,8 @@ format: html
 
 </details>
 
-#### Progress Report | Mar 2026
+#### Progress Report 1 \| Mar 2026
+
 <details>
 
 <summary><strong>Or Click to Show/Hide Progress Report</strong></summary>
@@ -38,22 +43,34 @@ format: html
 
 </details>
 
+#### Progress Report 2 \| Apr 2026
+
+<details>
+
+<summary><strong>Or Click to Show/Hide Progress Report</strong></summary>
+
+<iframe src="6354ProgressReport2.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
+
+</iframe>
+
+</details>
+
+#### Shiny Application \| [Link](https://martinez2k18.shinyapps.io/Trajecta-App-V1/)
+
 ## Assignments
 
--   [AI Lab ''Assignment 7'' - April 9th, 2026](6354-AI-Lab.qmd)
+- [AI Lab ''Assignment 7'' - April 9th, 2026](6354-AI-Lab.qmd)
 
--   [Assignment 1 - February 5th, 2026](6354-A1.qmd)
+- [Assignment 1 - February 5th, 2026](6354-A1.qmd)
 
--   [Assignment 2 - February 12th, 2026](6354-A2.qmd)
+- [Assignment 2 - February 12th, 2026](6354-A2.qmd)
 
--   [Assignment 3 - February 19th, 2026](6354-A3.qmd)
+- [Assignment 3 - February 19th, 2026](6354-A3.qmd)
 
--   [Assignment 4 - February 26th, 2026](6354-A4.qmd)
+- [Assignment 4 - February 26th, 2026](6354-A4.qmd)
 
--   [Assignment 5 - March 5th, 2026](6354-A5.qmd)
+- [Assignment 5 - March 5th, 2026](6354-A5.qmd)
 
--   [Assignment 6 - March 26th, 2026](6354-A6.qmd)
+- [Assignment 6 - March 26th, 2026](6354-A6.qmd)
 
--   [Assignment 8 - April 16th, 2026](6354-A8.qmd)
-
-
+- [Assignment 8 - April 16th, 2026](6354-A8.qmd)
