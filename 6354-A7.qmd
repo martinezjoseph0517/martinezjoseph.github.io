@@ -1,0 +1,26 @@
+---
+title: "Assingment 7 - AI Lab - April 9th, 2026"
+subtitile: "Information Management"
+format: 
+  html:
+     code-fold: true
+     code-summary: "Show the Code"
+---
+
+# AI Lab 1
+
+## Lab/R/Shiny/1
+
+::: big-iframe
+<iframe src="https://martinez2k18.shinyapps.io/EPPS6354-A7-Shine1/">
+
+</iframe>
+:::
+
+## Lab/R/Shiny/2
+
+::: big-iframe
+<iframe src="https://martinez2k18.shinyapps.io/EPPS6354-A7-Shine2/">
+
+</iframe>
+:::

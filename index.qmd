@@ -13,7 +13,7 @@ format:
 <section class="hero">
   <canvas id="globe-bg"></canvas>
   <div class="hero-content">
-    <p>Hi, I am <strong>Joseph Martinez</strong> — a financial professional and graduate student utilizing data science to maximize understandings of markets both domestic and global.</p>
+    <p>Hi, I am <strong>Joseph Martinez</strong> — a financial professional and graduate student utilizing data science to better understanding of our place in the global economy.</p>
   </div>
 </section>
 ```
