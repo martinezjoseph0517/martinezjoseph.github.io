@@ -42,11 +42,9 @@ table.dataTable {
 .hero {
   position: relative;
   /* Break out of Quarto's content container to span the full viewport width */
-  width:100vw;
-  left: 45%;
-  right: 55%;
-  margin-left: -42.5vw;
-  margin-right: -57.5vw;
+  width: 100vw;
+  left: 50%;
+  margin-left: -45vw;
   margin-top: 0;
   margin-bottom: 2rem;
   padding: 0;

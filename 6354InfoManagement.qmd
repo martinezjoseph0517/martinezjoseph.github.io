@@ -55,22 +55,22 @@ format: html
 
 </details>
 
-#### Shiny Application \| [Link](https://martinez2k18.shinyapps.io/Trajecta-App-V1/)
+#### Shiny Application \| [Link](https://martinezjoseph0517.github.io/cosmictrajectories/Trajecta.html)
 
 ## Assignments
 
-- [AI Lab ''Assignment 7'' - April 9th, 2026](6354-AI-Lab.qmd)
+- [Assignment 1 - Information Management Applications - February 5th, 2026](6354-A1.qmd)
 
-- [Assignment 1 - February 5th, 2026](6354-A1.qmd)
+- [Assignment 2 - Relational Schema - February 12th, 2026](6354-A2.qmd)
 
-- [Assignment 2 - February 12th, 2026](6354-A2.qmd)
+- [Assignment 3 - SQL Queries - February 19th, 2026](6354-A3.qmd)
 
-- [Assignment 3 - February 19th, 2026](6354-A3.qmd)
+- [Assignment 4 - Database Modeling with SQL - February 26th, 2026](6354-A4.qmd)
 
-- [Assignment 4 - February 26th, 2026](6354-A4.qmd)
+- [Assignment 5 - E-R Diagrams - March 5th, 2026](6354-A5.qmd)
 
-- [Assignment 5 - March 5th, 2026](6354-A5.qmd)
+- [Assignment 6 - Web Data Formats - March 26th, 2026](6354-A6.qmd)
 
-- [Assignment 6 - March 26th, 2026](6354-A6.qmd)
+- [Assignment 7 - AI Lab - April 9th, 2026](6354-A7.qmd)
 
-- [Assignment 8 - April 16th, 2026](6354-A8.qmd)
+- [Assignment 8 - NBA Shiny App - April 16th, 2026](6354-A8.qmd)

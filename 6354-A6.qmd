@@ -13,10 +13,121 @@ Funny how you can tell a lot about a system just by the way its data looks. Take
 
 Then there’s the GitHub API, which feels like JSONPlaceholder after a few cups of coffee and a promotion. Same JSON format, sure, but way more layered—objects nested inside arrays, links pointing to other endpoints, responses that almost spiral if you keep following them. It’s still built on REST architecture, but behind the scenes you’re dealing with serious infrastructure, usually relational databases that enforce structure long before the data reaches you. Add in pagination, caching, and rate limits.
 
-Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, "<channel>, <item>,<title>," like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
+Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, "<channel>", "<item>", "<title>," like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
 
 And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested "<Cube>" elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.
 
-### SQL Exercise: (In Progress)
+### SQL Exercise:
+#### i. Express the following query in SQL using no subqueries and no set operations. (Hint: left outer join)
 
-### R & PostgreSQL Exercise: (In Progress)
+```{}
+select id 
+from student 
+except 
+select s_id 
+from advisor 
+where i_id is not null
+```
+
+Updated Query:
+```{}
+select id
+from student
+left outer join advisor
+on student.id = advisor.s_id
+where i_id is null;
+```
+
+Result:
+ID
+19991
+54321
+55739
+70557
+
+#### ii. Using the university schema, write an SQL query to find the names and IDs of those instructors who teach every course taught in his or her department (i.e., every course that appears in the course relation with the instructor’s department name). Order result by name.
+```{}
+select i.name, i.ID
+from instructor i
+where not exists (
+    select 1
+    from course c
+    where c.dept_name = i.dept_name
+      and not exists (
+          select 1
+          from teaches t
+          where t.ID = i.ID
+            and t.course_id = c.course_id
+      )
+)
+order by i.name;
+```
+
+Result:
+name	    ID
+Einstein	22222
+El Said	  32343
+Kim	      98345
+Mozart	  15151
+Wu	      12121
+
+### R & PostgreSQL Exercise:
+```{R}
+# Connect PostgreSQL database using R
+# Packages: DBI, odbc, RPostgres
+# Documentation:
+## DBI: https://dbi.r-dbi.org
+## RPostgres https://github.com/r-dbi/RPostgres
+## R https://solutions.posit.co/connections/db/
+## odbc: https://solutions.posit.co/connections/db/best-practices/drivers/
+
+
+install.packages(c("RPostgres", "DBI", "odbc"))
+
+## Load libraries
+library(RPostgres) # Provides the Postgres() driver
+library(DBI)        # Generic R Database Interface
+library(odbc)       # Interface to ODBC driver
+
+## Connect to PostgreSQL and database
+
+con <- dbConnect(
+  RPostgres::Postgres(),
+  dbname   = "university",   # name of your database
+  host     = "localhost",    # or IP address if not local
+  port     = 5432,           # default PostgreSQL port (often 5432)
+  user     = "postgres",     # your PostgreSQL username
+  password = "Done0503"     # your PostgreSQL databae password
+)
+
+
+## Perform queries
+
+# (a) Simple query: fetch all rows/columns in 'instructor' and create a data object
+instructor_data <- dbGetQuery(con, "SELECT * FROM instructor")
+head(instructor_data)
+
+# (b) Another query: fetch instructors in 'Comp. Sci.' department 
+# with a salary > 60000 (example condition)
+comp_sci_instructors <- dbGetQuery(
+  con, 
+  "SELECT * FROM instructor 
+   WHERE dept_name = 'Comp. Sci.' AND salary > 60000;"
+)
+comp_sci_instructors
+
+# (c) Query a different table, e.g., 'student', and store in an R dataframe
+student_data <- dbGetQuery(con, "SELECT * FROM student WHERE tot_cred >= 50")
+head(student_data)
+
+
+## Export to CSV
+
+# Export the entire 'instructor' table (already in instructor_data) to CSV
+write.csv(instructor_data, file = "instructor_export.csv", row.names = FALSE)
+
+## Clean up
+
+# Always disconnect when done
+dbDisconnect(con)
+```

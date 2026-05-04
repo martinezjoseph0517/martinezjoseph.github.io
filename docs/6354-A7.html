@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 6 - March 26th, 2026 – Joseph Martinez: Financial Professional &amp; Aspiring Analyst</title>
+<title>Assingment 7 - AI Lab - April 9th, 2026 – Joseph Martinez: Financial Professional &amp; Aspiring Analyst</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -148,9 +148,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analyzing-json-and-xml-websites-structure-and-composition" id="toc-analyzing-json-and-xml-websites-structure-and-composition" class="nav-link active" data-scroll-target="#analyzing-json-and-xml-websites-structure-and-composition">Analyzing JSON and XML Websites’ Structure and Composition</a></li>
-  <li><a href="#sql-exercise-in-progress" id="toc-sql-exercise-in-progress" class="nav-link" data-scroll-target="#sql-exercise-in-progress">SQL Exercise: (In Progress)</a></li>
-  <li><a href="#r-postgresql-exercise-in-progress" id="toc-r-postgresql-exercise-in-progress" class="nav-link" data-scroll-target="#r-postgresql-exercise-in-progress">R &amp; PostgreSQL Exercise: (In Progress)</a></li>
+  <li><a href="#ai-lab-1" id="toc-ai-lab-1" class="nav-link active" data-scroll-target="#ai-lab-1">AI Lab 1</a>
+  <ul class="collapse">
+  <li><a href="#labrshiny1" id="toc-labrshiny1" class="nav-link" data-scroll-target="#labrshiny1">Lab/R/Shiny/1</a></li>
+  <li><a href="#labrshiny2" id="toc-labrshiny2" class="nav-link" data-scroll-target="#labrshiny2">Lab/R/Shiny/2</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -159,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 6 - March 26th, 2026</h1>
+<h1 class="title">Assingment 7 - AI Lab - April 9th, 2026</h1>
 </div>
 
 
@@ -176,30 +178,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="analyzing-json-and-xml-websites-structure-and-composition" class="level3">
-<h3 class="anchored" data-anchor-id="analyzing-json-and-xml-websites-structure-and-composition">Analyzing JSON and XML Websites’ Structure and Composition</h3>
-<p>Funny how you can tell a lot about a system just by the way its data looks. Take JSONPlaceholder, for instance, it’s almost too neat. Everything comes back as tidy key–value pairs, grouped into arrays of objects like posts or users, with fields that rarely surprise you. It mimics a RESTful API, where you hit a URL and get JSON back, no fuss. Underneath, it behaves like a NoSQL-style document setup (even if it’s just simulated), where each object stands on its own without rigid table rules. It’s simple on purpose—kind of like training wheels, but you still learn how to ride.</p>
-<p>Then there’s the GitHub API, which feels like JSONPlaceholder after a few cups of coffee and a promotion. Same JSON format, sure, but way more layered—objects nested inside arrays, links pointing to other endpoints, responses that almost spiral if you keep following them. It’s still built on REST architecture, but behind the scenes you’re dealing with serious infrastructure, usually relational databases that enforce structure long before the data reaches you. Add in pagination, caching, and rate limits.</p>
-Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, “<channel>”, “<item>”, “
-<title>
-&lt;p&gt;,” like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.&lt;/p&gt;
-&lt;p&gt;And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested “&lt;Cube&gt;” elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id="sql-exercise-in-progress" class="level3"&gt;
-&lt;h3&gt;SQL Exercise: (In Progress)&lt;/h3&gt;
-&lt;/section&gt;
-&lt;section id="r-postgresql-exercise-in-progress" class="level3"&gt;
-&lt;h3&gt;R &amp; PostgreSQL Exercise: (In Progress)&lt;/h3&gt;
-&lt;div id="quarto-navigation-envelope" class="hidden"&gt;
-&lt;p&gt;&lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl"&gt;Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU="&gt;Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ=="&gt;Home&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw="&gt;/index.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QmxvZw=="&gt;Blog&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2Jsb2cuaHRtbA=="&gt;/blog.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q291cnNld29yaw=="&gt;Coursework&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RVBQUyA2MzU2IERhdGEgVmlzdWFsaXphdGlvbiB8IEZhbGwgMjAyNQ=="&gt;EPPS 6356 Data Visualization | Fall 2025&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2VwcHM2MzU2Lmh0bWw="&gt;/epps6356.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RVBQUyA2MzIzIEtub3dsZWRnZSBNaW5pbmcgfCBTcHJpbmcgMjAyNg=="&gt;EPPS 6323 Knowledge Mining | Spring 2026&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6LzYzMjNLbm93bGVkZ2VNaW5pbmcuaHRtbA=="&gt;/6323KnowledgeMining.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RVBQUyA2MzU0IEluZm9ybWF0aW9uIE1hbmFnZW1lbnQgfCBTcHJpbmcgMjAyNg=="&gt;EPPS 6354 Information Management | Spring 2026&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6LzYzNTRJbmZvTWFuYWdlbWVudC5odG1s"&gt;/6354InfoManagement.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q1YgJiBSZXN1bWU="&gt;CV &amp; Resume&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2N2cmVzdW1lLmh0bWw="&gt;/cvresume.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWJvdXQ="&gt;About&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2Fib3V0Lmh0bWw="&gt;/about.html&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TGlicmFyeQ=="&gt;Library&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2xpYnJhcnkuaHRtbA=="&gt;/library.html&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id="quarto-meta-markdown" class="hidden"&gt;
-&lt;p&gt;&lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ=="&gt;Assignment 6 - March 26th, 2026 – Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU="&gt;Assignment 6 - March 26th, 2026 – Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl"&gt;Assignment 6 - March 26th, 2026 – Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ=="&gt;Joseph Martinez: Financial Professional &amp; Aspiring Analyst&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="&gt;&lt;/span&gt; &lt;span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/section&gt;
+<section id="ai-lab-1" class="level1">
+<h1>AI Lab 1</h1>
+<section id="labrshiny1" class="level2">
+<h2 class="anchored" data-anchor-id="labrshiny1">Lab/R/Shiny/1</h2>
+<div class="big-iframe">
+<iframe src="https://martinez2k18.shinyapps.io/EPPS6354-A7-Shine1/">
+</iframe>
+</div>
+</section>
+<section id="labrshiny2" class="level2">
+<h2 class="anchored" data-anchor-id="labrshiny2">Lab/R/Shiny/2</h2>
+<div class="big-iframe">
+<iframe src="https://martinez2k18.shinyapps.io/EPPS6354-A7-Shine2/">
+</iframe>
+</div>
 
-&lt;/main&gt; &lt;!-- /main --&gt;
-&lt;script id = "quarto-html-after-body" type="application/javascript"&gt;
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -208,7 +208,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       icon: icon
     };
     anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) =&gt; {
+    const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
           return true;
@@ -273,12 +273,12 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
         var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) =&gt; {
+      var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
      var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i&lt;links.length; i++) {
+      for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
           // undo the damage that might have been done by quarto-nav.js in the case of
@@ -314,7 +314,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       window.tippy(el, config); 
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i&lt;noterefs.length; i++) {
+    for (var i=0; i<noterefs.length; i++) {
       const ref = noterefs[i];
       tippyHover(ref, function() {
         // use id or data attribute instead here
@@ -330,9 +330,9 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       });
     }
     const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) =&gt; {
+    const processXRef = (id, note) => {
       // Strip column container classes
-      const stripColumnClz = (el) =&gt; {
+      const stripColumnClz = (el) => {
         el.classList.remove("page-full", "page-columns");
         if (el.children) {
           for (const child of el.children) {
@@ -344,11 +344,11 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       if (id === null || id.startsWith('sec-')) {
         // Special case sections, only their first couple elements
         const container = document.createElement("div");
-        if (note.children &amp;&amp; note.children.length &gt; 2) {
+        if (note.children && note.children.length > 2) {
           container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i &lt; note.children.length; i++) {
+          for (let i = 1; i < note.children.length; i++) {
             const child = note.children[i];
-            if (child.tagName === "P" &amp;&amp; child.innerText === "") {
+            if (child.tagName === "P" && child.innerText === "") {
               continue;
             } else {
               container.appendChild(child.cloneNode(true));
@@ -381,7 +381,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
         }
       }
     }
-    for (var i=0; i&lt;xrefs.length; i++) {
+    for (var i=0; i<xrefs.length; i++) {
       const xref = xrefs[i];
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
@@ -406,8 +406,8 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
           } else {
             // See if we can fetch this
             fetch(url.split('#')[0])
-            .then(res =&gt; res.text())
-            .then(html =&gt; {
+            .then(res => res.text())
+            .then(html => {
               const parser = new DOMParser();
               const htmlDoc = parser.parseFromString(html, "text/html");
               const note = htmlDoc.getElementById(id);
@@ -415,7 +415,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
                 const html = processXRef(id, note);
                 instance.setContent(html);
               } 
-            }).finally(() =&gt; {
+            }).finally(() => {
               instance.enable();
               instance.show();
             });
@@ -424,8 +424,8 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
           // See if we can fetch a full url (with no hash to target)
           // This is a special case and we should probably do some content thinning / targeting
           fetch(url)
-          .then(res =&gt; res.text())
-          .then(html =&gt; {
+          .then(res => res.text())
+          .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
             const note = htmlDoc.querySelector('main.content');
@@ -433,13 +433,13 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
               // This should only happen for chapter cross references
               // (since there is no id in the URL)
               // remove the first header
-              if (note.children.length &gt; 0 &amp;&amp; note.children[0].tagName === "HEADER") {
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
                 note.children[0].remove();
               }
               const html = processXRef(null, note);
               instance.setContent(html);
             } 
-          }).finally(() =&gt; {
+          }).finally(() => {
             instance.enable();
             instance.show();
           });
@@ -448,36 +448,36 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       });
     }
         let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) =&gt; {
+        const selectorForAnnotation = ( cell, annotation) => {
           let cellAttr = 'data-code-cell="' + cell + '"';
           let lineAttr = 'data-code-annotation="' +  annotation + '"';
           const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
           return selector;
         }
-        const selectCodeLines = (annoteEl) =&gt; {
+        const selectCodeLines = (annoteEl) => {
           const doc = window.document;
           const targetCell = annoteEl.getAttribute("data-target-cell");
           const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
           const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
           const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) =&gt; {
+          const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
           let top = null;
           let height = null;
           let parent = null;
-          if (lineIds.length &gt; 0) {
+          if (lineIds.length > 0) {
               //compute the position of the single el (top and bottom and make a div)
               const el = window.document.getElementById(lineIds[0]);
               top = el.offsetTop;
               height = el.offsetHeight;
               parent = el.parentElement.parentElement;
-            if (lineIds.length &gt; 1) {
+            if (lineIds.length > 1) {
               const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
               const bottom = lastEl.offsetTop + lastEl.offsetHeight;
               height = bottom - top;
             }
-            if (top !== null &amp;&amp; height !== null &amp;&amp; parent !== null) {
+            if (top !== null && height !== null && parent !== null) {
               // cook up a div (if necessary) and position it 
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
@@ -504,9 +504,9 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
             selectedAnnoteEl = annoteEl;
           }
         };
-        const unselectCodeLines = () =&gt; {
+        const unselectCodeLines = () => {
           const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) =&gt; {
+          elementsIds.forEach((elId) => {
             const div = window.document.getElementById(elId);
             if (div) {
               div.remove();
@@ -517,7 +517,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
           // Handle positioning of the toggle
       window.addEventListener(
         "resize",
-        throttle(() =&gt; {
+        throttle(() => {
           elRect = undefined;
           if (selectedAnnoteEl) {
             selectCodeLines(selectedAnnoteEl);
@@ -527,13 +527,13 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       function throttle(fn, ms) {
       let throttle = false;
       let timer;
-        return (...args) =&gt; {
+        return (...args) => {
           if(!throttle) { // first call gets through
               fn.apply(this, args);
               throttle = true;
           } else { // all the others get throttled
               if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() =&gt; {
+              timer = setTimeout(() => {
                 fn.apply(this, args);
                 timer = throttle = false;
               }, ms);
@@ -543,7 +543,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
         // Attach click handler to the DT
         const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
         for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) =&gt; {
+          annoteDlNode.addEventListener('click', (event) => {
             const clickedEl = event.target;
             if (clickedEl !== selectedAnnoteEl) {
               unselectCodeLines();
@@ -560,7 +560,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
             }
           });
         }
-    const findCites = (el) =&gt; {
+    const findCites = (el) => {
       const parentEl = el.parentElement;
       if (parentEl) {
         const cites = parentEl.dataset.cites;
@@ -577,7 +577,7 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       }
     };
     var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i&lt;bibliorefs.length; i++) {
+    for (var i=0; i<bibliorefs.length; i++) {
       const ref = bibliorefs[i];
       const citeInfo = findCites(ref);
       if (citeInfo) {
@@ -598,10 +598,10 @@ Switching gears, XML has a completely different personality. Look at the NASA RS
       }
     }
   });
-  &lt;/script&gt;
-&lt;/div&gt; &lt;!-- /content --&gt;
+  </script>
+</div> <!-- /content -->
 
-&lt;/body&gt;
 
-&lt;/html&gt;
-</title></item></channel></section></main></div></body></html>
+
+
+</body></html>
