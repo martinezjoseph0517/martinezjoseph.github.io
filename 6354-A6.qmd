@@ -13,14 +13,15 @@ Funny how you can tell a lot about a system just by the way its data looks. Take
 
 Then there’s the GitHub API, which feels like JSONPlaceholder after a few cups of coffee and a promotion. Same JSON format, sure, but way more layered—objects nested inside arrays, links pointing to other endpoints, responses that almost spiral if you keep following them. It’s still built on REST architecture, but behind the scenes you’re dealing with serious infrastructure, usually relational databases that enforce structure long before the data reaches you. Add in pagination, caching, and rate limits.
 
-Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, "<channel>", "<item>", "<title>," like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
+Switching gears, XML has a completely different personality. Look at the NASA RSS Feed and you’ll see what I mean. Everything is wrapped in tags, "`channel`{=html}", "`item`{=html}", "`title`{=html}," like someone insisted every piece of data wear a name badge. It’s verbose, maybe a little old-school, but dependable. These feeds follow RSS standards (XML-based) and usually pull from relational databases, converting rows into structured XML for distribution. It’s less about interaction and more about broadcasting information in a consistent, predictable format.
 
-And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested "<Cube>" elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.
+And then the ECB Exchange Rates XML Feed, arguably the most rigid of the bunch. The structure leans on nested "`Cube`{=html}" elements, organizing dates and currency values in a strict hierarchy that leaves zero room for ambiguity. No extra fluff, no storytelling, just numbers doing their job. This kind of setup relies on XML schemas and tightly controlled backend systems, almost certainly relational databases, where precision matters more than flexibility. Honestly, JSON feels like a quick text message, while XML—especially here—reads more like a carefully formatted financial report. Different moods, same goal: move data from one place to another.
 
 ### SQL Exercise:
+
 #### i. Express the following query in SQL using no subqueries and no set operations. (Hint: left outer join)
 
-```{}
+```         
 select id 
 from student 
 except 
@@ -30,7 +31,8 @@ where i_id is not null
 ```
 
 Updated Query:
-```{}
+
+```         
 select id
 from student
 left outer join advisor
@@ -38,15 +40,11 @@ on student.id = advisor.s_id
 where i_id is null;
 ```
 
-Result:
-ID
-19991
-54321
-55739
-70557
+Result: ID 19991 54321 55739 70557
 
 #### ii. Using the university schema, write an SQL query to find the names and IDs of those instructors who teach every course taught in his or her department (i.e., every course that appears in the course relation with the instructor’s department name). Order result by name.
-```{}
+
+```         
 select i.name, i.ID
 from instructor i
 where not exists (
@@ -63,15 +61,10 @@ where not exists (
 order by i.name;
 ```
 
-Result:
-name	    ID
-Einstein	22222
-El Said	  32343
-Kim	      98345
-Mozart	  15151
-Wu	      12121
+Result: name ID Einstein 22222 El Said 32343 Kim 98345 Mozart 15151 Wu 12121
 
 ### R & PostgreSQL Exercise:
+
 ```{R}
 # Connect PostgreSQL database using R
 # Packages: DBI, odbc, RPostgres
