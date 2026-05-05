@@ -40,7 +40,15 @@ on student.id = advisor.s_id
 where i_id is null;
 ```
 
-Result: ID 19991 54321 55739 70557
+Result: ID
+
+19991
+
+54321
+
+55739
+
+70557
 
 #### ii. Using the university schema, write an SQL query to find the names and IDs of those instructors who teach every course taught in his or her department (i.e., every course that appears in the course relation with the instructor’s department name). Order result by name.
 
@@ -61,7 +69,17 @@ where not exists (
 order by i.name;
 ```
 
-Result: name ID Einstein 22222 El Said 32343 Kim 98345 Mozart 15151 Wu 12121
+Result: name ID
+
+Einstein 22222
+
+El Said 32343
+
+Kim 98345
+
+Mozart 15151
+
+Wu 12121
 
 ### R & PostgreSQL Exercise:
 
