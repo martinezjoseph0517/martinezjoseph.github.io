@@ -4,14 +4,14 @@ title: "About"
 
 <img src="Photo_JosephMartinez.jpg" width="100%"/>
 
-I am Joseph Martinez, a detail-oriented financial services professional with Series 7 and 63 licenses, advanced Excel modeling skills, and client-facing experience at both broker/dealers and registered investment advisors. Adept at supporting investment operations, account administration, and high-volume client communications. Currently pursuing an MS in Social Data Analytics, enhancing analytical acumen and data reporting capabilities. Eager to contribute to a high-performing, collaborative investment advisory team focused on exceptional client outcomes.
+I am Joseph Martinez, a detail-oriented financial services professional with Series 65, 7, and 63 licenses, advanced R and Excel modeling skills, and client-facing experience at both broker/dealers and registered investment advisers. Adept at supporting investment operations, account administration, and high-volume client communications. Currently pursuing an MS in Social Data Analytics, enhancing analytic acumen and data reporting capabilities. Eager to contribute to a high-performing, collaborative team focused on exceptional outcomes.
 
 University Contact Information:
 
--   joseph.martinez\@utdallas.edu
+- joseph.martinez\@utdallas.edu
 
 Personal Contact Information:
 
--   martinez.joseph\@me.com
+- martinez.joseph\@me.com
 
--   \(210\) 837-0859
+- \(210\) 837-0859

@@ -92,9 +92,6 @@ Wu 12121
 ## R https://solutions.posit.co/connections/db/
 ## odbc: https://solutions.posit.co/connections/db/best-practices/drivers/
 
-
-install.packages(c("RPostgres", "DBI", "odbc"))
-
 ## Load libraries
 library(RPostgres) # Provides the Postgres() driver
 library(DBI)        # Generic R Database Interface
