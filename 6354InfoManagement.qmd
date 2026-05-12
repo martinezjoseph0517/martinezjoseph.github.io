@@ -69,6 +69,18 @@ format: html
 
 </details>
 
+### Final Report \| May 2026
+
+<details>
+
+<summary><strong>Or Click to Show/Hide Progress Report</strong></summary>
+
+<iframe src="6354FinalReport.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
+
+</iframe>
+
+</details>
+
 # Assignments
 
 - [Assignment 1 - Information Management Applications - February 5th, 2026](6354-A1.qmd)
