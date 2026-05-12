@@ -57,13 +57,25 @@ format: html
 
 ### Shiny Application \| [Link](https://martinezjoseph0517.github.io/cosmictrajectories/Trajecta.html)
 
-### Final Presentation \| May 2026 \| [Link](https://docs.google.com/presentation/d/1O4Ky6PlrKKaymjBsA0rMZVwyE1e9p-tu/edit?usp=sharing&ouid=113784586418124834596&rtpof=true&sd=true)
+### Final Presentation \| May 2026
 
 <details>
 
 <summary><strong>Or Click to Show/Hide Progress Report</strong></summary>
 
 <iframe src="6354FinalPresentation.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
+
+</iframe>
+
+</details>
+
+### Final Report \| May 2026
+
+<details>
+
+<summary><strong>Or Click to Show/Hide Progress Report</strong></summary>
+
+<iframe src="6354FinalReport.pdf" width="100%" height="800px" style="border: none; margin-top: 1em;">
 
 </iframe>
 
